@@ -87,7 +87,7 @@ body{
     left:50%;
     bottom:0;
     background: #333;
-    color:#fff;
+    color:#000;
     padding:10px 25px;
     border-radius:30px;
     text-decoration: none;
@@ -118,6 +118,8 @@ body{
     z-index: 10;
 }
 
+
+
 .container .box:hover .brand_name{
     top:40px;
     opacity: 1;
@@ -139,7 +141,6 @@ body{
 }
 
 
-
 .container .box .product{
     position:absolute;
     top:50%;
@@ -150,6 +151,36 @@ body{
     transition: 0.5s;
     z-index: 11;
 }
+#product_img2{
+    max-width: 100%;
+    width: 340px;
+
+}
+
+#product_img{
+    max-width:100%;
+    width:240px;
+}
+
+
+.container .box #product_img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    max-width:400px;
+    transform:translate3d(-50%, -65%, 50px) ;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    z-index: 11;
+}
+
+.container .box #product_img{
+    transform:translate3d(-50%, -60%, 100px) rotate(22deg);
+}
+
+.container .box:hover #product_img{
+    transform:translate3d(-50%, -60%, 100px) rotate(15deg);
+}
 
 .container .box:hover .product{
     transform:translate3d(-50%, -50%, 100px) rotate(-15deg);
@@ -157,7 +188,7 @@ body{
 
 .container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .buy{
-    background: #379bf7;
+    background: #fff;
 
 }
 
